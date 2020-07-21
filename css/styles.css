@@ -15,7 +15,7 @@
 when visible */
 
 .slider__photo {
-    opacity: 0; /* photos stay hidden be default */
+    opacity: 0; /* photos stay hidden by default */
     position: absolute; /* position at x = 0 y = 0 relatively to the container */
     top: 0;
     width: 100%; /* 100% width of the parent */
