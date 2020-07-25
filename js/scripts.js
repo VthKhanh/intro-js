@@ -45,4 +45,17 @@ jQuery(document).ready(function () {
 
     $('.navbar li a:contains(people)').text('Personnel');
     $('#people .headline').text('Personnel');
+
+    //Weather API function
+
+    $.ajax({
+        url: '//api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&APIKEY=d9099e3d8ef4520a51031ac4d5fdafaf'
+    }).done(function(resp){
+
+        $('.fixed-button.weather-btn').text(`Helsinki today ${resp.main.temp} feels like ${resp.main.feels_like}`);
+
+    });
+
+    console.log(resp.main.feels_like);
+
 });

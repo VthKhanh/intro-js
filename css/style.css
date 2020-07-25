@@ -586,6 +586,13 @@ em {
     padding: 10px 0;
 }
 
+.weather-btn {
+    right: px;
+    color: white;
+    width: 350px;
+    padding: 10px 0;
+}
+
 .fixed-button:hover {
     cursor: pointer;
     background-color: #333;
